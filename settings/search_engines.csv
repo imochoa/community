@@ -1,6 +1,11 @@
 URL Template,Name
 https://www.amazon.com/s/?field-keywords=%s,amazon
+https://whoogle.imochoa.com/search?q=%s,woogle
+https://searxng.imochoa.com/?q=%s,sir x
 https://www.google.com/search?q=%s,google
 https://maps.google.com/maps?q=%s,map
 https://scholar.google.com/scholar?q=%s,scholar
 https://en.wikipedia.org/w/index.php?search=%s,wiki
+https://search.nixos.org/packages?type=packages&query=%s,nix packages
+https://mipmip.github.io/-manager-option-search?query=%s,home manager
+https://nixos.wiki/index.php?search=%s,nix wiki
