@@ -46,6 +46,8 @@ linux_application_directories = [
     "/usr/share/applications",
     "/usr/local/share/applications",
     os.path.expandvars("/home/$USER/.local/share/applications"),
+    # TODO PR1 For nix home manager
+    os.path.expandvars("/home/$USER/.nix-profile/share/applications"),
     "/var/lib/flatpak/exports/share/applications",
     "/var/lib/snapd/desktop/applications",
 ]
@@ -202,14 +204,19 @@ if app.platform == "linux":
                                 exec_key = config["Desktop Entry"]["Exec"]
                                 # remove extra quotes from exec
                                 if exec_key[0] == '"' and exec_key[-1] == '"':
-                                    exec_key = re.sub('"', "", exec_key)
+                                    # TODO PR1 optimize?
+                                    # exec_key = re.sub('"', "", exec_key)
+                                    exec_key = exec_key[1:-1]
                                 # remove field codes and add full path if necessary
                                 if exec_key[0] == "/":
                                     items[name_key] = re.sub(args_pattern, "", exec_key)
                                 else:
-                                    items[name_key] = "/usr/bin/" + re.sub(
-                                        args_pattern, "", exec_key
-                                    )
+                                    # TODO PR1 why assume it is in /usr/bin?
+                                    # items[name_key] = "/usr/bin/" + re.sub(
+                                    #     args_pattern, "", exec_key
+                                    # )
+                                    # TODO why only remove flags when path starts with /?
+                                    items[name_key] = re.sub(args_pattern, "", exec_key)
                         except:
                             print(
                                 "get_linux_apps: skipped parsing application file ",
