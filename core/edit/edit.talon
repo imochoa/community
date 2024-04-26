@@ -7,6 +7,11 @@ zoom reset: edit.zoom_reset()
 find it: edit.find()
 next one: edit.find_next()
 
+#   Like find_and_replace tag
+#   (does this collide with anything?)
+hunt next: edit.find_next()
+hunt previous: edit.find_previous()
+
 # Navigation
 
 # The reason for these spoken forms is that "page up" and "page down" are globally defined as keys.

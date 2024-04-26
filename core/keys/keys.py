@@ -190,6 +190,10 @@ symbol_key_words = {
     "backslash": "\\",
     "minus": "-",
     "dash": "-",
+    "em dash": "—",
+    "diam symbol": "⌀",
+    "R arrow": "→",
+    "L arrow": "←",
     "equals": "=",
     "plus": "+",
     "grave": "`",
@@ -223,6 +227,7 @@ symbol_key_words = {
     "double quote": '"',
     # Currencies
     "dollar": "$",
+    "euro": "€",
     "pound": "£",
 }
 
