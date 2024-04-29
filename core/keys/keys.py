@@ -198,7 +198,7 @@ symbol_key_words = {
     "plus": "+",
     "grave": "`",
     "tilde": "~",
-    "bang": "!",
+    "bang sign": "!",
     "down score": "_",
     "underscore": "_",
     "paren": "(",
