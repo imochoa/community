@@ -25,3 +25,5 @@ w,whale
 x,plex
 y,yank
 z,zip
+# bat has a lot of false positives
+# quench and crunch get mixed up
