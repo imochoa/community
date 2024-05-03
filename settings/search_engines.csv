@@ -1,12 +1,12 @@
 URL Template,Name
 https://en.wikipedia.org/w/index.php?search=%s,wiki
-https://maps.google.com/maps?q=%s,map
+https://maps.google.com/maps?q=%s,google map
 https://mipmip.github.io/-manager-option-search?query=%s,home manager
 https://nixos.wiki/index.php?search=%s,nix wiki
 https://scholar.google.com/scholar?q=%s,scholar
 https://search.nixos.org/packages?type=packages&query=%s,nix packages
 https://search.talonvoice.com/search,talon github
-https://searxng.imochoa.com/?q=%s,sir x
+https://searxng.imochoa.com/?q=%s,google
 https://whoogle.imochoa.com/search?q=%s,woogle
 https://www.amazon.com/s/?field-keywords=%s,amazon
-https://www.google.com/search?q=%s,googleb
+https://www.google.com/search?q=%s,real google
