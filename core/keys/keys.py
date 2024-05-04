@@ -163,6 +163,7 @@ punctuation_words = {
     # Currencies
     "dollar sign": "$",
     "pound sign": "£",
+    "euro sign": "€",
     "hyphen": "-",
     "L paren": "(",
     "left paren": "(",
@@ -227,8 +228,8 @@ symbol_key_words = {
     "double quote": '"',
     # Currencies
     "dollar": "$",
-    "euro": "€",
-    "pound": "£",
+    # "euro": "€",
+    # "pound": "£",
 }
 
 # make punctuation words also included in {user.symbol_keys}
