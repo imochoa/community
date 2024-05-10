@@ -2,16 +2,18 @@ Word(s),Spoken Form (If Different)
 admin
 Cisco
 Citrix
-DNS
 docstring
-ISC2,I es see two
 Jira
 Minecraft
 mypy
+nix
 nmap
 nmap,N map
 rango
-REPL
 under-documented,under documented
+# Accronyms (pronounced as usual)
+REPL
+DNS
+ISC2,I es see two
 VPN
 VPS
