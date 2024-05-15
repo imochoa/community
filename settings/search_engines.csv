@@ -6,7 +6,8 @@ https://nixos.wiki/index.php?search=%s,nix wiki
 https://scholar.google.com/scholar?q=%s,scholar
 https://search.nixos.org/packages?type=packages&query=%s,nix packages
 https://search.talonvoice.com/search,talon github
-https://searxng.imochoa.com/?q=%s,google
-https://whoogle.imochoa.com/search?q=%s,woogle
 https://www.amazon.com/s/?field-keywords=%s,amazon
 https://www.google.com/search?q=%s,real google
+# Self hosted
+https://searxng.imochoa.com/?q=%s,google
+https://whoogle.imochoa.com/search?q=%s,woogle

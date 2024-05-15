@@ -1,13 +1,18 @@
 Path,Spoken
-/home/imo,user
+# System paths
 /home/imo,profile
-/home/imo/Desktop,desktop
+/home/imo,user
+/home/imo/.config,config
+# Data paths
+/home/imo/Code,code
 /home/imo/Desktop,desk
-/home/imo/Documents,documents
+/home/imo/Desktop,desktop
 /home/imo/Documents,docks
+/home/imo/Documents,documents
 /home/imo/Downloads,downloads
 /home/imo/Music,music
 /home/imo/Pictures,pictures
 /home/imo/Videos,videos
+# talon paths
 /home/imo/.talon,talon home
 /home/imo/.talon/user,talon user
