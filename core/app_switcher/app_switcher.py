@@ -48,6 +48,7 @@ linux_application_directories = [
     os.path.expandvars("/home/$USER/.local/share/applications"),
     # TODO PR1 For nix home manager
     os.path.expandvars("/home/$USER/.nix-profile/share/applications"),
+    "/snap/bin",
     "/var/lib/flatpak/exports/share/applications",
     "/var/lib/snapd/desktop/applications",
 ]
