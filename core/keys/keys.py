@@ -134,6 +134,8 @@ if app.platform == "mac":
 ctx.lists["self.modifier_key"] = modifier_keys
 ctx.lists["self.letter"] = alphabet_list
 
+# Pokey: https://github.com/pokey/pokey_talon/blob/923f656680765bd8637a7a45f1a1572a76799db5/core/keys/keys.py#L186
+
 # `punctuation_words` is for words you want available BOTH in dictation and as key names in command mode.
 # `symbol_key_words` is for key names that should be available in command mode, but NOT during dictation.
 punctuation_words = {
