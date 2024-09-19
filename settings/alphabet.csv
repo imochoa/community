@@ -8,31 +8,21 @@ e,each
 f,fine
 g,gust
 h,harp
-# i,sit
-# j,jury
-# k,crunch
+i,ink
+j,jane
+k,kick
 l,look
 m,made
 n,near
-# o,odd
+o,oats
 p,pit
 q,quench
-# r,red
-# s,sun
+r,risk
+s,spun
 t,trap
 u,urge
 v,vest
 w,whale
 x,plex
-# y,yank
-z,zip
-# bat has a lot of false positives
-# quench and crunch get mixed up
-# Pokey https://github.com/pokey/pokey_talon/blob/main/settings/alphabet.csv
-i,ink
-j,jane
-k,kick
-o,oats
-r,risk
-s,spun
 y,york
+z,zip
