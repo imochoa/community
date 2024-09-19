@@ -2,27 +2,10 @@ from talon import Context, Module, app
 
 from ..user_settings import get_list_from_csv
 
-
-def setup_default_alphabet():
-    """set up common default alphabet.
-
-    no need to modify this here, change your alphabet using alphabet.csv"""
-    initial_default_alphabet = "air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split()
-    initial_letters_string = "abcdefghijklmnopqrstuvwxyz"
-    initial_default_alphabet_dict = dict(
-        zip(initial_default_alphabet, initial_letters_string)
-    )
-
-    return initial_default_alphabet_dict
-
-
-alphabet_list = get_list_from_csv(
-    "alphabet.csv", ("Letter", "Spoken Form"), setup_default_alphabet()
-)
-
 # used for number keys & function keys respectively
 digits = "zero one two three four five six seven eight nine".split()
 f_digits = "one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty".split()
+
 
 mod = Module()
 mod.list("letter", desc="The spoken phonetic alphabet")
@@ -132,7 +115,6 @@ if app.platform == "mac":
     modifier_keys["command"] = "cmd"
     modifier_keys["option"] = "alt"
 ctx.lists["self.modifier_key"] = modifier_keys
-ctx.lists["self.letter"] = alphabet_list
 
 # Pokey: https://github.com/pokey/pokey_talon/blob/923f656680765bd8637a7a45f1a1572a76799db5/core/keys/keys.py#L186
 
