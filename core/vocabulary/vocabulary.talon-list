@@ -1,11 +1,19 @@
 list: user.vocabulary
 -
-N map: nmap
-under documented: under-documented
-nmap
 admin
 Cisco
 Citrix
-VPN
-DNS
+docstring
+Jira
 Minecraft
+mypy
+nix
+nmap
+N map: nmap
+rango
+under documented: under-documented
+REPL
+SVG
+DNS
+I es see two: ISC2
+VPN
