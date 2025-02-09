@@ -216,7 +216,8 @@ def mouse_scroll_continuous(
         scroll_dir = new_scroll_dir
         scroll_start_ts = time.perf_counter()
         scroll_continuous_helper()
-        scroll_job = cron.interval("16ms", scroll_continuous_helper)
+        # TODO: slowed it down
+        scroll_job = cron.interval("64ms", scroll_continuous_helper)
         ctx.tags = ["user.continuous_scrolling"]
 
         if not settings.get("user.mouse_hide_mouse_gui"):
@@ -246,7 +247,8 @@ def scroll_continuous_helper():
     y = round(scroll_amount * acceleration_speed * scroll_dir)
     if y == 0:
         y = scroll_dir
-    actions.mouse_scroll(y)
+    # TODO: by_lines required for VSCode?
+    actions.mouse_scroll(y, by_lines=True)
 
 
 def scroll_gaze_helper():

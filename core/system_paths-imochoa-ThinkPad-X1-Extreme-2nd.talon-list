@@ -1,0 +1,16 @@
+list: user.system_paths
+hostname: imochoa-ThinkPad-X1-Extreme-2nd
+-
+user: /home/imochoa
+desktop: /home/imochoa/Desktop
+desk: /home/imochoa/Desktop
+documents: /home/imochoa/Documents
+docks: /home/imochoa/Documents
+downloads: /home/imochoa/Downloads
+music: /home/imochoa/Music
+pictures: /home/imochoa/Pictures
+videos: /home/imochoa/Videos
+talon home: /home/imochoa/.talon
+talon recordings: /home/imochoa/.talon/recordings
+talon user: /home/imochoa/.talon/user
+home: /home/imochoa
