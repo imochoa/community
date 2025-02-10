@@ -59,6 +59,13 @@ mod.setting(
     desc="When adjusting the continuous scrolling speed through voice commands, the result is that the speed is multiplied by the dictated number divided by this number.",
 )
 
+mod.setting(
+    "mouse_gaze_scroll_speed_multiplier",
+    type=float,
+    default=1.0,
+    desc="This multiplies the gaze scroll speed",
+)
+
 mod.tag(
     "continuous_scrolling",
     desc="Allows commands for adjusting continuous scrolling behavior",
@@ -216,8 +223,7 @@ def mouse_scroll_continuous(
         scroll_dir = new_scroll_dir
         scroll_start_ts = time.perf_counter()
         scroll_continuous_helper()
-        # TODO: slowed it down
-        scroll_job = cron.interval("64ms", scroll_continuous_helper)
+        scroll_job = cron.interval("16ms", scroll_continuous_helper)
         ctx.tags = ["user.continuous_scrolling"]
 
         if not settings.get("user.mouse_hide_mouse_gui"):
@@ -247,8 +253,7 @@ def scroll_continuous_helper():
     y = round(scroll_amount * acceleration_speed * scroll_dir)
     if y == 0:
         y = scroll_dir
-    # TODO: by_lines required for VSCode?
-    actions.mouse_scroll(y, by_lines=True)
+    actions.mouse_scroll(y)
 
 
 def scroll_gaze_helper():
@@ -262,7 +267,10 @@ def scroll_gaze_helper():
 
     rect = window.rect
     midpoint = rect.center.y
-    amount = ((y - midpoint) / (rect.height / 10)) ** 3
+    factor = continuous_scrolling_speed_factor * settings.get(
+        "user.mouse_gaze_scroll_speed_multiplier"
+    )
+    amount = factor * (((y - midpoint) / (rect.height / 10)) ** 3)
     actions.mouse_scroll(amount)
 
 
