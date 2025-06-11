@@ -295,17 +295,11 @@ class UserActions:
     def code_state_switch():
         actions.user.insert_snippet_by_name("switchStatement")
 
-    def code_state_for():
-        actions.user.insert_snippet_by_name("forLoopStatement")
-
     def code_state_while():
         actions.user.insert_snippet_by_name("whileLoopStatement")
 
     def code_state_infinite_loop():
         actions.user.insert_snippet_by_name("infiniteLoopStatement")
-
-    def code_state_return():
-        actions.auto_insert("return ")
 
     def code_break():
         actions.auto_insert("break;")
