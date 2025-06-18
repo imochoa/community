@@ -3,4 +3,5 @@ grip, DataGrip
 py, jetbrains-pycharm-ce
 terminal, Gnome-terminal
 fox, firefox
+tea, org.wezfurlong.wezterm
 journal, Com.github.xournalpp.xournalpp
