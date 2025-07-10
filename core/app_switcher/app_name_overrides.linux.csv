@@ -4,5 +4,6 @@ py, jetbrains-pycharm-ce
 fox, firefox
 terminal, org.wezfurlong.wezterm
 tea, org.wezfurlong.wezterm
+files, org.gnome.Nautilus
 journal, Com.github.xournalpp.xournalpp
 freeplane, org-knopflerfish-framework-BundleThread
