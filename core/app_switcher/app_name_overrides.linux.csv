@@ -2,6 +2,7 @@ Spoken form, App name (or list an app name by itself on a line to exclude it)
 grip, DataGrip
 py, jetbrains-pycharm-ce
 fox, firefox
+crow, chromium
 terminal, org.wezfurlong.wezterm
 tea, org.wezfurlong.wezterm
 files, org.gnome.Nautilus
