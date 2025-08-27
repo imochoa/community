@@ -49,4 +49,7 @@ repos:
     rev: 1.10.2
     hooks:
       - id: talonfmt
+        # My issue: my system python is too new and cannot install talonfmt
+        # fix: tell it to use the current interpreter (should be nix-managed)
+        language_version: "3.12"
         args: ["--in-place"]
