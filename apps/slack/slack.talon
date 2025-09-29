@@ -20,6 +20,29 @@ focus (move | next): key(ctrl-`)
 grab left: key(shift-up)
 grab right: key(shift-down)
 add line: key(shift-enter)
+send [it]: key(cmd-enter)
+
+message {user.contact_full_names}:
+    key(escape)
+    key(cmd-n)
+    sleep(100ms)
+    edit.select_line()
+    insert(user.contact_full_names)
+    sleep(200ms)
+    key(tab)
+
+message new: key(cmd-n)
+
+go channel [<user.text>]:
+    key(cmd-shift-l)
+    sleep(100ms)
+    edit.select_line()
+    text = text or ""
+    insert(text + "\n")
+    # Position the cursor so that "choose <int>" works
+    key(tab)
+    key(tab)
+    key(tab)
 
 (slack | lack) (slap | slaw | slapper): edit.line_insert_down()
 (element | bit) [next]: key(tab)
