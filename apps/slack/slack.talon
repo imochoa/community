@@ -27,9 +27,24 @@ message {user.contact_full_names}:
     key(cmd-n)
     sleep(100ms)
     edit.select_line()
+    # Sometimes the first name is better than the full name
     insert(user.contact_full_names)
-    sleep(200ms)
+    sleep(300ms)
     key(tab)
+
+text {user.contact_full_names} [<user.text>]:
+    key(escape)
+    key(cmd-n)
+    sleep(200ms)
+    edit.select_line()
+    # Sometimes the first name is better than the full name
+    insert(user.contact_full_names)
+    sleep(300ms)
+    key(tab)
+    sleep(300ms)
+    key(tab)
+    text = text or ""
+    insert(text)
 
 message new: key(cmd-n)
 
