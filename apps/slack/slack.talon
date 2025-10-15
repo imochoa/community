@@ -22,10 +22,11 @@ grab right: key(shift-down)
 add line: key(shift-enter)
 send [it]: key(cmd-enter)
 
+# TODO: Make a pull request to community
 message {user.contact_full_names}:
     key(escape)
     key(cmd-n)
-    sleep(100ms)
+    sleep(200ms)
     edit.select_line()
     # Sometimes the first name is better than the full name
     insert(user.contact_full_names)
@@ -50,7 +51,7 @@ message new: key(cmd-n)
 
 go channel [<user.text>]:
     key(cmd-shift-l)
-    sleep(100ms)
+    sleep(200ms)
     edit.select_line()
     text = text or ""
     insert(text + "\n")
