@@ -33,6 +33,16 @@ message {user.contact_full_names}:
     sleep(300ms)
     key(tab)
 
+message from {user.contact_full_names}:
+    key(escape)
+    key(cmd-f)
+    sleep(200ms)
+    edit.select_line()
+    # Sometimes the first name is better than the full name
+    insert("from:@" + user.contact_full_names)
+    sleep(300ms)
+    key(enter)
+
 text {user.contact_full_names} [<user.text>]:
     key(escape)
     key(cmd-n)
