@@ -1,10 +1,14 @@
 File extension,Name
 .py,dot pie
 .talon,dot talon
+.yaml,dot yamal
+.talon,dot talent
 .talon-list,dot talon list
+.talon-list,dot talent list
 .md,dot mark down
 .sh,dot shell
 .vim,dot vim
+.env,dot env
 .c,dot see
 .cs,dot see sharp
 .com,dot com
