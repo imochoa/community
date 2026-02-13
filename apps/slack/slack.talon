@@ -24,14 +24,7 @@ send [it]: key(cmd-enter)
 
 # TODO: Make a pull request to community
 message {user.contact_full_names}:
-    key(escape)
-    key(cmd-n)
-    sleep(200ms)
-    edit.select_line()
-    # Sometimes the first name is better than the full name
-    insert(user.contact_full_names)
-    sleep(300ms)
-    key(tab)
+    user.slack_text_contact(user.contact_full_names)
 
 message from {user.contact_full_names}:
     key(escape)
@@ -44,18 +37,7 @@ message from {user.contact_full_names}:
     key(enter)
 
 text {user.contact_full_names} [<user.text>]:
-    key(escape)
-    key(cmd-n)
-    sleep(200ms)
-    edit.select_line()
-    # Sometimes the first name is better than the full name
-    insert(user.contact_full_names)
-    sleep(300ms)
-    key(tab)
-    sleep(300ms)
-    key(tab)
-    text = text or ""
-    insert(text)
+    user.slack_text_contact(user.contact_full_names, text)
 
 message new: key(cmd-n)
 

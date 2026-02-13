@@ -2,6 +2,12 @@ from talon import Context, Module, actions
 
 ctx = Context()
 mod = Module()
+mod.setting(
+    "slack_delay",
+    type=str,
+    default="400ms",
+    desc="Delay in milliseconds for Slack actions",
+)
 apps = mod.apps
 apps.slack = "app.name: Slack"
 mod.apps.slack = r"""
@@ -117,3 +123,6 @@ class Actions:
 
     def slack_toggle_right_sidebar():
         """Toggles the visibility of the right sidebar in Slack"""
+
+    def slack_text_contact(name: str, text: str = ""):
+        """"""

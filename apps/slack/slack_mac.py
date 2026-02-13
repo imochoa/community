@@ -1,4 +1,4 @@
-from talon import Context, actions
+from talon import Context, actions, settings
 
 ctx = Context()
 ctx.matches = r"""
@@ -123,3 +123,18 @@ class UserActions:
     def slack_toggle_right_sidebar():
         """Toggles the visibility of the right sidebar in Slack"""
         actions.key("cmd-.")
+
+    def slack_text_contact(name: str, text: str = ""):
+        """"""
+        actions.key("escape")
+        actions.key("cmd-n")
+        actions.sleep(settings.get("user.slack_delay"))
+        actions.edit.select_line()
+        actions.insert(name)
+        actions.sleep(settings.get("user.slack_delay"))
+        actions.key("tab")
+        if text:
+            actions.sleep(settings.get("user.slack_delay"))
+            actions.key("tab")
+            actions.insert(text)
+            actions.key("enter")
