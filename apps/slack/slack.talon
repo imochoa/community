@@ -24,8 +24,7 @@ add line: key(shift-enter)
 send [it]: key(cmd-enter)
 
 # TODO: Make a pull request to community
-message {user.contact_full_names}:
-    user.slack_text_contact(user.contact_full_names)
+message {user.contact_full_names}: user.slack_text_contact(user.contact_full_names)
 
 message from {user.contact_full_names}:
     key(escape)
