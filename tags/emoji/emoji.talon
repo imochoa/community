@@ -1,4 +1,6 @@
 tag: user.emoji
+mode: command
+mode: dictation
 -
 
 emoticon {user.emoticon}: "{emoticon}"
