@@ -37,7 +37,7 @@ message from {user.contact_full_names}:
     key(enter)
 
 text {user.contact_full_names} [<user.text>]:
-    user.slack_text_contact(user.contact_full_names, text)
+    user.slack_text_contact(user.contact_full_names, text or "")
 
 message new: key(cmd-n)
 

@@ -124,17 +124,18 @@ class UserActions:
         """Toggles the visibility of the right sidebar in Slack"""
         actions.key("cmd-.")
 
-    def slack_text_contact(name: str, text: str = ""):
+    def slack_text_contact(name: str, text: str | None = None):
         """"""
         actions.key("escape")
         actions.key("cmd-n")
         actions.sleep(settings.get("user.slack_delay"))
         actions.edit.select_line()
-        actions.insert(name)
+        actions.insert("@" + name)
         actions.sleep(settings.get("user.slack_delay"))
         actions.key("tab")
-        if text:
+        if text is not None:
             actions.sleep(settings.get("user.slack_delay"))
             actions.key("tab")
+        if text:
             actions.insert(text)
             actions.key("enter")
