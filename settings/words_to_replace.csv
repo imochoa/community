@@ -12,6 +12,7 @@ December,december
 YAML,Yamal
 Talon Voice,talent voice
 talon-list,talent list
+talon-lists,talent lists
 macOS,makos
 SentinelOne,sentinel one
 FreeCAD,free cad
@@ -22,3 +23,7 @@ justfile,just file
 disk,disc
 disks,discs
 JSON,Jason
+pull request,pool request
+pull requests,pool requests
+poll request,pool request
+poll requests,pool requests
