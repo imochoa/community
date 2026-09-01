@@ -74,7 +74,7 @@ symbols = [
     Symbol("=", None, ["equals"]),
     Symbol("+", None, ["plus"]),
     Symbol("~", None, ["tilde"]),
-    Symbol("_", None, ["down score", "underscore"]),
+    Symbol("_", None, ["down score", "underscore", "L dash"]),
     Symbol("(", ["paren", "L paren", "left paren"]),
     Symbol(")", ["R paren", "right paren"]),
     Symbol("[", None,["brack", "L brack", "bracket", "L bracket", "left bracket", "square", "L square", "left square",],),
