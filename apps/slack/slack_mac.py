@@ -130,12 +130,11 @@ class UserActions:
         actions.key("cmd-n")
         actions.sleep(settings.get("user.slack_delay"))
         actions.edit.select_line()
-        actions.insert("@" + name)
+        actions.insert(name)
+        actions.sleep(settings.get("user.slack_delay"))
+        actions.key("enter")
         actions.sleep(settings.get("user.slack_delay"))
         actions.key("tab")
-        if text is not None:
-            actions.sleep(settings.get("user.slack_delay"))
-            actions.key("tab")
         if text:
             actions.insert(text)
             actions.key("enter")
