@@ -58,7 +58,7 @@ currency_symbols = [
 
 old_symbols = [
     Symbol("`", ["back tick"], ["grave"]),
-    Symbol(",", ["comma", "coma", "cot"]),
+    Symbol(",", ["comma", "coma"]),
     Symbol(".", ["period", "full stop"], ["dot", "point"]),
     Symbol(";", ["semicolon"], ["semi"]),
     Symbol(":", ["colon"]),
@@ -76,7 +76,7 @@ old_symbols = [
     Symbol("=", None, ["equals"]),
     Symbol("+", None, ["plus"]),
     Symbol("~", None, ["tilde"]),
-    Symbol("_", None, ["down score", "underscore", "L dash"]),
+    Symbol("_", None, ["down score", "underscore"]),
     Symbol("(", ["paren", "L paren", "left paren"]),
     Symbol(")", ["R paren", "right paren"]),
     Symbol("[", None,["brack", "L brack", "bracket", "L bracket", "left bracket", "square", "L square", "left square",],),
